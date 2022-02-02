@@ -50,8 +50,5 @@ def download_file(url: str, path: str, md5: Optional[str] = None):
         urllib.request.urlretrieve(url, filename=path, reporthook=t.update_to, data=None)
         t.total = t.n
 
-    if md5:
-        print('Computing hash')
-        print(md5, md5sum(path))
-        if md5 != md5sum(path):
-            raise ValueError('Hash mismatch')
+    if md5 and md5 != md5sum(path):
+        raise ValueError('Hash mismatch')

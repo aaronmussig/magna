@@ -1,5 +1,4 @@
 import os
-import shutil
 import tempfile
 
 import numpy as np
@@ -11,7 +10,7 @@ from magna.io import download_file
 
 class GuncAllScores:
     source = 'https://swifter.embl.de/~fullam/gunc/paper_supplementary_files/All_Datasets.GUNC.scores.all_levels.specI2species.tsv'
-    path = os.path.join(MAGNA_DIR, 'dataset', 'gunc', 'All_Datasets.GUNC.scores.all_levels.specI2species.tsv')
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gunc', 'All_Datasets.GUNC.scores.all_levels.specI2species.feather')
     md5 = 'a54e3719221a42a5f96b267412827d27'
 
     def __init__(self):
@@ -20,6 +19,10 @@ class GuncAllScores:
         self.df = self._read()
 
     def _read(self):
+        return pd.read_feather(self.path)
+
+    @staticmethod
+    def _read_tsv(path):
         dtype = {
             'n_genes_called': np.uintc,
             'n_genes_mapped': np.uintc,
@@ -34,7 +37,7 @@ class GuncAllScores:
         }
         converters = {'pass.GUNC': lambda x: x == 'True'}
         print(f'Note: Line 1,934,122 is skipped as GMGC.SAMEA2623756.bin.19 (GMGC unfiltered) is NaN.')
-        df = pd.read_csv(self.path, sep='\t', index_col=False, dtype=dtype,
+        df = pd.read_csv(path, sep='\t', index_col=False, dtype=dtype,
                          converters=converters, skiprows=[1934122])
         return df
 
@@ -44,6 +47,6 @@ class GuncAllScores:
             tmp_path = os.path.join(tmpdir, 'download.tsv')
             download_file(self.source, tmp_path, self.md5)
 
-            # Move the file
+            df = self._read_tsv(tmp_path)
             os.makedirs(os.path.dirname(self.path), exist_ok=True)
-            shutil.move(tmp_path, self.path)
+            df.to_feather(path=self.path, compression='lz4')
