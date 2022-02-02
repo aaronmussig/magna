@@ -1,3 +1,10 @@
+# 1.0.0 (2022-02-02)
+
+
+### Features
+
+* **dataset:** Added GTDBR95 metadata, and GUNC data. ([1755414](https://github.com/aaronmussig/magna/commit/17554142b6b2a29f1b5899f31f014f8fb0c28428))
+
 # 1.0.0 (2021-11-08)
 
 
