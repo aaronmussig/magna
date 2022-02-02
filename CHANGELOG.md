@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/aaronmussig/magna/compare/v1.0.1...v1.0.2) (2022-02-02)
+
+
+### Bug Fixes
+
+* **datasets:** Updated the GTDB R95 bac source. ([d74eccf](https://github.com/aaronmussig/magna/commit/d74eccf03e949c8798df9b0a09f23f3d76ebfc56))
+
 ## [1.0.1](https://github.com/aaronmussig/magna/compare/v1.0.0...v1.0.1) (2022-02-02)
 
 
