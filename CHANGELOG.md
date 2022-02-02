@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/aaronmussig/magna/compare/v1.0.0...v1.0.1) (2022-02-02)
+
+
+### Performance Improvements
+
+* **dataset:** Updated GTDB/GUNC to use feather file format. ([90fe0fd](https://github.com/aaronmussig/magna/commit/90fe0fdcfab3021002d51005d6d4c77b73018043))
+
 # 1.0.0 (2022-02-02)
 
 
