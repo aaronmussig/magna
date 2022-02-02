@@ -1,0 +1,30 @@
+{
+  "name": "magna",
+  "version": "0.0.1",
+  "description": "Magna is a collection of commands that I frequently use in bioinformatics and day-to-day life.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronmussig/magna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronmussig/magna/issues"
+  },
+  "homepage": "https://github.com/aaronmussig/magna#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "semantic-release": "^18.0.0"
+  }
+}
