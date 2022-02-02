@@ -53,7 +53,7 @@ class GtdbMetadataR95Arc(_GtdbMetadataR95):
 
 
 class GtdbMetadataR95Bac(_GtdbMetadataR95):
-    source = 'https://data.ace.uq.edu.au/public/gtdb/data/releases/release95/95.0/bac120_metadata_r95.tar.gz'
+    source = 'https://data.gtdb.ecogenomic.org/releases/release95/95.0/bac120_metadata_r95.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'bac120_metadata_r95.feather')
     md5 = '223ada02ffca4d1a2dda6edb9a164dcd'
 
