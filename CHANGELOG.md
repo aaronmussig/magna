@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/aaronmussig/magna/compare/v1.0.2...v1.0.3) (2022-02-02)
+
+
+### Bug Fixes
+
+* **datasets:** Reduced the gunc dataset to just RefSeq/GenBank genomes. ([d432765](https://github.com/aaronmussig/magna/commit/d43276556658ffae56d756b2c5e629d3efe46e9b))
+
 ## [1.0.2](https://github.com/aaronmussig/magna/compare/v1.0.1...v1.0.2) (2022-02-02)
 
 
