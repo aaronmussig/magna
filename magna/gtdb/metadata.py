@@ -7,7 +7,7 @@ from magna.config import MAGNA_DIR
 from magna.io import download_file, md5sum, untar
 
 
-class _GtdbMetadataR95:
+class _GtdbMetadata:
 
     def __init__(self, source: str, path: str, md5: str):
         self.source = source
@@ -43,7 +43,9 @@ class _GtdbMetadataR95:
             df.to_feather(path=self.path, compression='lz4')
 
 
-class GtdbMetadataR95Arc(_GtdbMetadataR95):
+# ----------------------------------------------------------------------------------------------------------------------
+
+class GtdbMetadataR95Arc(_GtdbMetadata):
     source = 'https://data.gtdb.ecogenomic.org/releases/release95/95.0/ar122_metadata_r95.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'ar122_metadata_r95.feather')
     md5 = '110ad5daa2dbed2ee904b10c295da5dc'
@@ -52,7 +54,7 @@ class GtdbMetadataR95Arc(_GtdbMetadataR95):
         super().__init__(self.source, self.path, self.md5)
 
 
-class GtdbMetadataR95Bac(_GtdbMetadataR95):
+class GtdbMetadataR95Bac(_GtdbMetadata):
     source = 'https://data.gtdb.ecogenomic.org/releases/release95/95.0/bac120_metadata_r95.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'bac120_metadata_r95.feather')
     md5 = '223ada02ffca4d1a2dda6edb9a164dcd'
@@ -65,3 +67,31 @@ class GtdbMetadataR95:
 
     def __init__(self):
         self.df = pd.concat([GtdbMetadataR95Arc().df, GtdbMetadataR95Bac().df])
+
+
+# ----------------------------------------------------------------------------------------------------------------------
+
+class GtdbMetadataR202Arc(_GtdbMetadata):
+    source = 'https://data.gtdb.ecogenomic.org/releases/release202/202.0/ar122_metadata_r202.tar.gz'
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'ar122_metadata_r202.feather')
+    md5 = '0607728ae1f56bdb1a7cc24d238185c3'
+
+    def __init__(self):
+        super().__init__(self.source, self.path, self.md5)
+
+
+class GtdbMetadataR202Bac(_GtdbMetadata):
+    source = 'https://data.gtdb.ecogenomic.org/releases/release202/202.0/bac120_metadata_r202.tar.gz'
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'bac120_metadata_r202.feather')
+    md5 = '68fed11eb688982edb6f4669476c2a10'
+
+    def __init__(self):
+        super().__init__(self.source, self.path, self.md5)
+
+
+class GtdbMetadataR202:
+
+    def __init__(self):
+        self.df = pd.concat([GtdbMetadataR202Arc().df, GtdbMetadataR202Bac().df])
+
+# ----------------------------------------------------------------------------------------------------------------------

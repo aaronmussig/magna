@@ -1,10 +1,14 @@
 import hashlib
+import os
+import shutil
 import tarfile
 import urllib
 import urllib.request
 from typing import Optional
 
 from tqdm import tqdm
+
+from magna.config import CACHE_DIR
 
 
 def untar(file_path, dir_name):
@@ -52,3 +56,13 @@ def download_file(url: str, path: str, md5: Optional[str] = None):
 
     if md5 and md5 != md5sum(path):
         raise ValueError('Hash mismatch')
+
+
+def cache_file(srv_path: str, local_name: str) -> str:
+    """Copies a remote file to the local machine."""
+    if not os.path.isdir(CACHE_DIR):
+        os.makedirs(CACHE_DIR)
+    local_path = os.path.join(CACHE_DIR, local_name)
+    if not os.path.isfile(local_path):
+        shutil.copyfile(srv_path, local_path)
+    return local_path
