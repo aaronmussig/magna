@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/aaronmussig/magna/compare/v1.1.0...v1.2.0) (2022-02-16)
+
+
+### Features
+
+* **accession:** Add canonical_gid function. ([95067ca](https://github.com/aaronmussig/magna/commit/95067ca2b09fa4506915ea1d214ce203df571fe4))
+
 # [1.1.0](https://github.com/aaronmussig/magna/compare/v1.0.3...v1.1.0) (2022-02-16)
 
 
