@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/aaronmussig/magna/compare/v1.0.3...v1.1.0) (2022-02-16)
+
+
+### Features
+
+* **GTDB:** Add R202 and Genome. ([31e5bc3](https://github.com/aaronmussig/magna/commit/31e5bc361a0c2839adac97cb41deb89998907611))
+
 ## [1.0.3](https://github.com/aaronmussig/magna/compare/v1.0.2...v1.0.3) (2022-02-02)
 
 
