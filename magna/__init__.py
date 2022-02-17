@@ -1,7 +1,7 @@
 __title__ = 'magna'
 __description__ = 'Magna is a collection of commands that I frequently use in bioinformatics and day-to-day life.'
 __url__ = 'https://git.microba.core/modules/python/bio-proc-sdk'
-__version__ = '1.1.0'
+__version__ = '1.2.0'
 __author__ = 'Aaron Mussig'
 __author_email__ = 'aaronmussig@gmail.com'
 __license__ = 'GNU AGPLv3'
