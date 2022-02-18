@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/aaronmussig/magna/compare/v1.2.0...v1.3.0) (2022-02-17)
+
+
+### Features
+
+* **gunc:** Updated GUNC dataset for MAXCss ([ffaf645](https://github.com/aaronmussig/magna/commit/ffaf645f7564dce73b9f5bbec389934a286be1b8))
+
 # [1.2.0](https://github.com/aaronmussig/magna/compare/v1.1.0...v1.2.0) (2022-02-16)
 
 
