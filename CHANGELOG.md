@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/aaronmussig/magna/compare/v1.3.0...v1.4.0) (2022-02-18)
+
+
+### Features
+
+* **gtdb:** Added GTDB trees. ([08ba91c](https://github.com/aaronmussig/magna/commit/08ba91ce793b23603fcc863651901a65f05ba8fa))
+
 # [1.3.0](https://github.com/aaronmussig/magna/compare/v1.2.0...v1.3.0) (2022-02-17)
 
 
