@@ -19,7 +19,7 @@ class _GtdbTree:
         self.tree = self._read()
 
     def _read(self):
-        return dendropy.Tree.get(path=self.path, schema='newick')
+        return dendropy.Tree.get(path=self.path, schema='newick', preserve_underscores=True)
 
     def _download(self):
         with tempfile.TemporaryDirectory() as tmpdir:
