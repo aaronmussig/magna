@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tree &mdash; magna 1.4.0 documentation</title>
+  <title>Tree &mdash; magna 2.0.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> magna
           </a>
               <div class="version">
-                1.4.0
+                2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -42,11 +42,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">GTDB</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tree</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#release-95">Release 95</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#release-202">Release 202</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata.html">Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="genome.html">Genome</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enums.html">Enums</a></li>
@@ -60,14 +56,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../util/io.html">Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../util/accession.html">Accession</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Changelog</span></p>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html">1.4.0 (2022-02-18)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html#id2">1.3.0 (2022-02-17)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html#id4">1.2.0 (2022-02-16)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html#id6">1.1.0 (2022-02-16)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html#id12">1.0.0 (2022-02-02)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changelog.html#id14">1.0.0 (2021-11-08)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
 </ul>
 
         </div>
@@ -86,7 +77,7 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
       <li>Tree</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/aaronmussig/magna/blob/master/docs/source/gtdb/tree.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/aaronmussig/magna/blob/main/docs/source/gtdb/tree.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -96,11 +87,69 @@
              
   <section id="tree">
 <h1>Tree<a class="headerlink" href="#tree" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTree">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">magna.gtdb.tree.</span></span><span class="sig-name descname"><span class="pre">GtdbTree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">md5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.gtdb.tree.GtdbTree" title="Permalink to this definition"></a></dt>
+<dd><p>The base class that all GTDB tree objects inherit.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTree.md5">
+<span class="sig-name descname"><span class="pre">md5</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#magna.gtdb.tree.GtdbTree.md5" title="Permalink to this definition"></a></dt>
+<dd><p>The expected MD5 checksum of the file.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTree.path">
+<span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#magna.gtdb.tree.GtdbTree.path" title="Permalink to this definition"></a></dt>
+<dd><p>The path to the downloaded file.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTree.source">
+<span class="sig-name descname"><span class="pre">source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#magna.gtdb.tree.GtdbTree.source" title="Permalink to this definition"></a></dt>
+<dd><p>The source URL.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTree.tree">
+<span class="sig-name descname"><span class="pre">tree</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dendropy.datamodel.treemodel.Tree</span></em><a class="headerlink" href="#magna.gtdb.tree.GtdbTree.tree" title="Permalink to this definition"></a></dt>
+<dd><p>The dendropy tree.</p>
+</dd></dl>
+
+</dd></dl>
+
 <section id="release-95">
 <h2>Release 95<a class="headerlink" href="#release-95" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTreeR95Arc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">magna.gtdb.tree.</span></span><span class="sig-name descname"><span class="pre">GtdbTreeR95Arc</span></span><a class="headerlink" href="#magna.gtdb.tree.GtdbTreeR95Arc" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#magna.gtdb.tree.GtdbTree" title="magna.gtdb.tree.GtdbTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">GtdbTree</span></code></a></p>
+<p>The GTDB archaeal tree (release 95).</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTreeR95Bac">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">magna.gtdb.tree.</span></span><span class="sig-name descname"><span class="pre">GtdbTreeR95Bac</span></span><a class="headerlink" href="#magna.gtdb.tree.GtdbTreeR95Bac" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#magna.gtdb.tree.GtdbTree" title="magna.gtdb.tree.GtdbTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">GtdbTree</span></code></a></p>
+<p>The GTDB bacterial tree (release 95).</p>
+</dd></dl>
+
 </section>
 <section id="release-202">
 <h2>Release 202<a class="headerlink" href="#release-202" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTreeR202Arc">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">magna.gtdb.tree.</span></span><span class="sig-name descname"><span class="pre">GtdbTreeR202Arc</span></span><a class="headerlink" href="#magna.gtdb.tree.GtdbTreeR202Arc" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#magna.gtdb.tree.GtdbTree" title="magna.gtdb.tree.GtdbTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">GtdbTree</span></code></a></p>
+<p>The GTDB archaeal tree (release 202).</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="magna.gtdb.tree.GtdbTreeR202Bac">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">magna.gtdb.tree.</span></span><span class="sig-name descname"><span class="pre">GtdbTreeR202Bac</span></span><a class="headerlink" href="#magna.gtdb.tree.GtdbTreeR202Bac" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#magna.gtdb.tree.GtdbTree" title="magna.gtdb.tree.GtdbTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">GtdbTree</span></code></a></p>
+<p>The GTDB bacterial tree (release 202).</p>
+</dd></dl>
+
 </section>
 </section>
 

@@ -5,11 +5,13 @@ magna
 .. image:: https://img.shields.io/pypi/v/magna.svg
     :alt: PyPI version
 
-cd ~/git/magna/docs && make clean && make html && cd ~/git/magna/docs/build/html && http-server
+Magna is a collection of bioinformatic datasets and utilities I use in my everyday life.
 
+This has been written with the intention of personal use, but feel free to use/contribute.
 
 .. toctree::
     :caption: GTDB
+    :titlesonly:
 
     gtdb/tree
     gtdb/metadata
@@ -18,19 +20,21 @@ cd ~/git/magna/docs && make clean && make html && cd ~/git/magna/docs/build/html
 
 .. toctree::
     :caption: GUNC
+    :titlesonly:
 
     gunc/index
 
 
 .. toctree::
    :caption: Utility
+   :titlesonly:
 
    util/io
    util/accession
 
 
 .. toctree::
-   :caption: Changelog
-   :maxdepth: 1
+   :caption: About
+   :titlesonly:
 
    changelog
