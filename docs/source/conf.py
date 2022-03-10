@@ -99,7 +99,7 @@ html_static_path = ['_static']
 html_style = 'css/custom.css'
 
 html_context = {'display_github': True, 'github_user': 'aaronmussig', 'github_repo': 'magna',
-    'github_version': 'master/docs/source/'}
+    'github_version': 'main/docs/source/'}
 
 
 source_suffix = {

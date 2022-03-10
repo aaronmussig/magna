@@ -37,11 +37,15 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
+      - name: Install package requirements
+        working-directory: ${{ github.workspace }}/main
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install .
+
       - name: Install Sphinx requirements
         working-directory: ${{ github.workspace }}/main/docs
         run: |
-          sudo apt-get update -y
-          python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
       - name: Build documentation
