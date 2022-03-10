@@ -1,3 +1,23 @@
+# Changelog
+
+# [2.0.0](https://github.com/aaronmussig/magna/compare/v1.4.0...v2.0.0) (2022-03-10)
+
+
+### Bug Fixes
+
+* **GTDB Tree:** Added option to force underscores. ([8c87e70](https://github.com/aaronmussig/magna/commit/8c87e70c8243d5ef4fda710d9fecd380ba3b5760))
+
+
+### Features
+
+* **GUNC:** Added GTDB R95 dataset methods. ([aff82f6](https://github.com/aaronmussig/magna/commit/aff82f65eca0a4224a36bb647598ba1c4915ecd5))
+* Refactored code, added CI for docs. ([e891e84](https://github.com/aaronmussig/magna/commit/e891e84045e30a00037dcfed9a1e818a5aab13d1))
+
+
+### BREAKING CHANGES
+
+* Re-organised folder structure.
+
 # [1.4.0](https://github.com/aaronmussig/magna/compare/v1.3.0...v1.4.0) (2022-02-18)
 
 
