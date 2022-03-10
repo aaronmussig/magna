@@ -1,12 +1,12 @@
 def canonical_gid(gid: str) -> str:
     """Get canonical form of NCBI genome accession.
 
+    Args:
+        gid: The NCBI genome accession.
+
     Example:
-        G005435135 -> G005435135
-        GCF_005435135.1 -> G005435135
-        GCF_005435135.1_ASM543513v1_genomic -> G005435135
-        RS_GCF_005435135.1 -> G005435135
-        GB_GCA_005435135.1 -> G005435135
+        >>> canonical_gid('GCF_005435135.1_ASM543513v1_genomic')
+        'G005435135'
     """
 
     if gid.startswith('U'):

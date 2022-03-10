@@ -1,25 +1,14 @@
-name: Release
+name: PyPI publish
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [ published ]
 
 jobs:
-  release:
-    name: release
+  pypi-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          cache: npm
-          node-version: 16
-      - run: npm install
-      - run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.6'

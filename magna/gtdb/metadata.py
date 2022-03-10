@@ -4,18 +4,22 @@ import tempfile
 import pandas as pd
 
 from magna.config import MAGNA_DIR
-from magna.io import download_file, md5sum, untar
+from magna.util.io import download_file, md5sum, untar
 
 
-class _GtdbMetadata:
+class GtdbMetadata:
 
     def __init__(self, source: str, path: str, md5: str):
-        self.source = source
-        self.path = path
-        self.md5 = md5
+        #: The source URL
+        self.source: str = source
+        #: The path to the metadata file.
+        self.path: str = path
+        #: The MD5 checksum of the downloaded file.
+        self.md5: str = md5
         if not os.path.isfile(self.path):
             self._download()
-        self.df = self._read()
+        #: The metadata as a pandas DataFrame.
+        self.df: pd.DataFrame = self._read()
 
     def _read(self):
         df = pd.read_feather(self.path)
@@ -45,7 +49,9 @@ class _GtdbMetadata:
 
 # ----------------------------------------------------------------------------------------------------------------------
 
-class GtdbMetadataR95Arc(_GtdbMetadata):
+class GtdbMetadataR95Arc(GtdbMetadata):
+    """The archaeal metadata (release 95)."""
+
     source = 'https://data.gtdb.ecogenomic.org/releases/release95/95.0/ar122_metadata_r95.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'ar122_metadata_r95.feather')
     md5 = '110ad5daa2dbed2ee904b10c295da5dc'
@@ -54,7 +60,9 @@ class GtdbMetadataR95Arc(_GtdbMetadata):
         super().__init__(self.source, self.path, self.md5)
 
 
-class GtdbMetadataR95Bac(_GtdbMetadata):
+class GtdbMetadataR95Bac(GtdbMetadata):
+    """The bacterial metadata (release 95)."""
+
     source = 'https://data.gtdb.ecogenomic.org/releases/release95/95.0/bac120_metadata_r95.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'bac120_metadata_r95.feather')
     md5 = '223ada02ffca4d1a2dda6edb9a164dcd'
@@ -64,14 +72,18 @@ class GtdbMetadataR95Bac(_GtdbMetadata):
 
 
 class GtdbMetadataR95:
+    """The combined archaeal and bacterial metadata (release 95)."""
 
     def __init__(self):
-        self.df = pd.concat([GtdbMetadataR95Arc().df, GtdbMetadataR95Bac().df])
+        #: The combined dataframe.
+        self.df: pd.DataFrame = pd.concat([GtdbMetadataR95Arc().df, GtdbMetadataR95Bac().df])
 
 
 # ----------------------------------------------------------------------------------------------------------------------
 
-class GtdbMetadataR202Arc(_GtdbMetadata):
+class GtdbMetadataR202Arc(GtdbMetadata):
+    """The archaeal metadata (release 202)."""
+
     source = 'https://data.gtdb.ecogenomic.org/releases/release202/202.0/ar122_metadata_r202.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'ar122_metadata_r202.feather')
     md5 = '0607728ae1f56bdb1a7cc24d238185c3'
@@ -80,7 +92,8 @@ class GtdbMetadataR202Arc(_GtdbMetadata):
         super().__init__(self.source, self.path, self.md5)
 
 
-class GtdbMetadataR202Bac(_GtdbMetadata):
+class GtdbMetadataR202Bac(GtdbMetadata):
+    """The bacterial metadata (release 202)."""
     source = 'https://data.gtdb.ecogenomic.org/releases/release202/202.0/bac120_metadata_r202.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'bac120_metadata_r202.feather')
     md5 = '68fed11eb688982edb6f4669476c2a10'
@@ -90,8 +103,10 @@ class GtdbMetadataR202Bac(_GtdbMetadata):
 
 
 class GtdbMetadataR202:
+    """The combined archaeal and bacterial metadata (release 202)."""
 
     def __init__(self):
-        self.df = pd.concat([GtdbMetadataR202Arc().df, GtdbMetadataR202Bac().df])
+        #: The combined dataframe.
+        self.df: pd.DataFrame = pd.concat([GtdbMetadataR202Arc().df, GtdbMetadataR202Bac().df])
 
 # ----------------------------------------------------------------------------------------------------------------------

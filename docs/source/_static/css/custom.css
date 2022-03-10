@@ -1,0 +1,13 @@
+@import 'theme.css';
+
+.wy-nav-content {
+    max-width: 100% !important;
+}
+
+.wy-side-nav-search {
+    background-color: #2a518f !important;
+}
+
+.rst-content img {
+    margin-right: 5px;
+}

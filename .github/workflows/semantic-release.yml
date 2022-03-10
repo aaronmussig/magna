@@ -1,0 +1,63 @@
+name: Semantic release
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  semantic-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache: npm
+          node-version: 16
+      - run: npm install
+      - run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+  documentation:
+    runs-on: ubuntu-latest
+    needs: ['semantic-release']
+    steps:
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      # Checkout the main branch to /main
+      - uses: actions/checkout@v2
+        with:
+          path: main
+
+      # Checkout the GitHub pages branch to /gh-pages
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Install Sphinx requirements
+        working-directory: ${{ github.workspace }}/main/docs
+        run: |
+          sudo apt-get update -y
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Build documentation
+        working-directory: ${{ github.workspace }}/main/docs
+        run: make html
+
+      - name: Move documentation
+        run: |
+          touch main/docs/build/html/.nojekyll
+          cp -a main/docs/build/html/. gh-pages/
+
+      - name: Upload documentation
+        working-directory: ${{ github.workspace }}/gh-pages
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add --all
+          git diff-index --quiet HEAD || git commit -m "docs update" -a
+          git push
