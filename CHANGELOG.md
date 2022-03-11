@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/aaronmussig/magna/compare/v2.0.0...v2.1.0) (2022-03-11)
+
+
+### Features
+
+* **io:** Added copy_file, and move_file. ([dd9f776](https://github.com/aaronmussig/magna/commit/dd9f77630dadfa5c5ec09f9e757e2d934d12b011))
+
 # Changelog
 
 # [2.0.0](https://github.com/aaronmussig/magna/compare/v1.4.0...v2.0.0) (2022-03-10)
