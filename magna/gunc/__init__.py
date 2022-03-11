@@ -26,7 +26,7 @@ def gunc_contig_assignment_gtdb_r95() -> pd.DataFrame:
 
 def gunc_all_levels_gtdb_r95() -> pd.DataFrame:
     """Return GUNC output at all levels for the R95 GTDB."""
-    path = os.path.join(MAGNA_DIR, 'dataset', 'gunc', 'gtdb_95.all_levels.tsv')
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gunc', 'gtdb_95.all_levels.feather')
     if not os.path.isfile(path):
         raise IOError(f'{path} does not exist.')
     return pd.read_feather(path)
