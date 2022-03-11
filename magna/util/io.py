@@ -106,3 +106,35 @@ def cache_file(srv_path: str, local_name: str) -> str:
     if not os.path.isfile(local_path):
         shutil.copyfile(srv_path, local_path)
     return local_path
+
+
+def copy_file(src: str, dest: str, checksum: Optional[bool] = False):
+    """Copies a file from the source path to the destination path.
+
+    Args:
+        src: The source path.
+        dest: The destination path.
+        checksum: Whether to validate the checksum of the file.
+
+    Raises:
+        IOError: If the checksum is invalid.
+    """
+    shutil.copyfile(src, dest)
+    if checksum:
+        if md5sum(src) != md5sum(dest):
+            raise IOError(f'Hash mismatch: {src} != {dest}')
+
+
+def move_file(src: str, dest: str, checksum: Optional[bool] = False):
+    """Moves a file from the source path to the destination path.
+
+    Args:
+        src: The source path.
+        dest: The destination path.
+        checksum: Whether to validate the checksum of the file.
+
+    Raises:
+        IOError: If the checksum is invalid.
+    """
+    copy_file(src, dest, checksum)
+    os.remove(src)
