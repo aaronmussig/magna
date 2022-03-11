@@ -14,3 +14,7 @@ Input/Output
 .. autofunction:: magna.util.io.cache_file
 
 
+.. autofunction:: magna.util.io.copy_file
+
+
+.. autofunction:: magna.util.io.move_file
