@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Input/Output &mdash; magna 2.0.0 documentation</title>
+  <title>Input/Output &mdash; magna 2.1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> magna
           </a>
               <div class="version">
-                2.0.0
+                2.1.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -167,6 +167,42 @@ directory <code class="docutils literal notranslate"><span class="pre">/tmp/data
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cache_file</span><span class="p">(</span><span class="s1">&#39;/srv/data.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;data.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="magna.util.io.copy_file">
+<span class="sig-prename descclassname"><span class="pre">magna.util.io.</span></span><span class="sig-name descname"><span class="pre">copy_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checksum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.util.io.copy_file" title="Permalink to this definition"></a></dt>
+<dd><p>Copies a file from the source path to the destination path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>src</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The source path.</p></li>
+<li><p><strong>dest</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The destination path.</p></li>
+<li><p><strong>checksum</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>]) – Whether to validate the checksum of the file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>IOError</strong> – If the checksum is invalid.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="magna.util.io.move_file">
+<span class="sig-prename descclassname"><span class="pre">magna.util.io.</span></span><span class="sig-name descname"><span class="pre">move_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checksum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.util.io.move_file" title="Permalink to this definition"></a></dt>
+<dd><p>Moves a file from the source path to the destination path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>src</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The source path.</p></li>
+<li><p><strong>dest</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The destination path.</p></li>
+<li><p><strong>checksum</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>]) – Whether to validate the checksum of the file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>IOError</strong> – If the checksum is invalid.</p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
