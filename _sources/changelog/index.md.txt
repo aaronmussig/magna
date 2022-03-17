@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/aaronmussig/magna/compare/v2.1.0...v2.1.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* **gunc:** TSV extension instead of feather for gunc file. ([5d0e84f](https://github.com/aaronmussig/magna/commit/5d0e84fb1e9bd783e3e5e0bbca4506af887c5a80))
+
 # [2.1.0](https://github.com/aaronmussig/magna/compare/v2.0.0...v2.1.0) (2022-03-11)
 
 
