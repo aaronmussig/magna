@@ -10,7 +10,7 @@ from magna.util.io import download_file
 
 def gunc_max_css_scores_gtdb_r95() -> pd.DataFrame:
     """Return the max clade separation score (CSS) for the R95 GTDB."""
-    path = os.path.join(MAGNA_DIR, 'dataset', 'gunc', 'GUNC.gtdb_95.maxCSS_level.feather')
+    path = os.path.join(MAGNA_DIR, 'gunc', 'gtdb_95.maxcss_level.feather')
     if not os.path.isfile(path):
         raise IOError(f'{path} does not exist.')
     return pd.read_feather(path)
@@ -18,7 +18,7 @@ def gunc_max_css_scores_gtdb_r95() -> pd.DataFrame:
 
 def gunc_contig_assignment_gtdb_r95() -> pd.DataFrame:
     """Return the contig assignment for the R95 GTDB."""
-    path = os.path.join(MAGNA_DIR, 'dataset', 'gunc', 'GUNC.gtdb_95.contig_assignments.feather')
+    path = os.path.join(MAGNA_DIR,'gunc', 'GUNC.gtdb_95.contig_assignments.feather')
     if not os.path.isfile(path):
         raise IOError(f'{path} does not exist.')
     return pd.read_feather(path)
@@ -26,7 +26,7 @@ def gunc_contig_assignment_gtdb_r95() -> pd.DataFrame:
 
 def gunc_all_levels_gtdb_r95() -> pd.DataFrame:
     """Return GUNC output at all levels for the R95 GTDB."""
-    path = os.path.join(MAGNA_DIR, 'dataset', 'gunc', 'gtdb_95.all_levels.feather')
+    path = os.path.join(MAGNA_DIR, 'gunc', 'gtdb_95.all_levels.feather')
     if not os.path.isfile(path):
         raise IOError(f'{path} does not exist.')
     return pd.read_feather(path)
