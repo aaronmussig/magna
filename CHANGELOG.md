@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/aaronmussig/magna/compare/v2.1.1...v2.2.0) (2022-03-17)
+
+
+### Features
+
+* **gunc:** Updated GUNC paths. ([8306b31](https://github.com/aaronmussig/magna/commit/8306b318f7a5db7ce21e6ac3b091e270c2d433c0))
+
 ## [2.1.1](https://github.com/aaronmussig/magna/compare/v2.1.0...v2.1.1) (2022-03-11)
 
 
