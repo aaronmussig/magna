@@ -1,3 +1,12 @@
+# [2.4.0](https://github.com/aaronmussig/magna/compare/v2.3.0...v2.4.0) (2022-03-29)
+
+
+### Features
+
+* **gtdb markers:** Added sets of BAC120/AR53/AR122 markers. ([30e66c3](https://github.com/aaronmussig/magna/commit/30e66c313b1dcb2073d8a35489c24b5279952c28))
+* **gunc:** Add method to parse contig_assignments file. ([625c597](https://github.com/aaronmussig/magna/commit/625c59766488d16d48eeae10ed1e236bc78abdeb))
+* **pfam/tigrfam:** Add PFAM/TIGRFAM output parsers. ([35c0755](https://github.com/aaronmussig/magna/commit/35c0755cecf602bc5ea4d66299e943bcc2befaf9))
+
 # [2.3.0](https://github.com/aaronmussig/magna/compare/v2.2.0...v2.3.0) (2022-03-29)
 
 
