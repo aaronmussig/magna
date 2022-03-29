@@ -16,6 +16,7 @@ This has been written with the intention of personal use, but feel free to use/c
     gtdb/tree
     gtdb/metadata
     gtdb/genome
+    gtdb/markers
     gtdb/enums
 
 .. toctree::
