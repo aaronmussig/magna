@@ -24,6 +24,12 @@ This has been written with the intention of personal use, but feel free to use/c
 
     gunc/index
 
+.. toctree::
+    :caption: DIAMOND
+    :titlesonly:
+
+    diamond/index
+
 
 .. toctree::
    :caption: Utility
