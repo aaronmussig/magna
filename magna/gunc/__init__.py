@@ -33,7 +33,7 @@ def gunc_max_css_scores_gtdb_r95() -> pd.DataFrame:
 
 def gunc_contig_assignment_gtdb_r95() -> pd.DataFrame:
     """Return the contig assignment for the R95 GTDB."""
-    path = os.path.join(MAGNA_DIR, 'gunc', 'GUNC.gtdb_95.contig_assignments.feather')
+    path = os.path.join(MAGNA_DIR, 'gunc', 'gtdb_95.contig_assignments.feather')
     if not os.path.isfile(path):
         raise IOError(f'{path} does not exist.')
     return pd.read_feather(path)
