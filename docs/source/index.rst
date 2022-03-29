@@ -31,6 +31,19 @@ This has been written with the intention of personal use, but feel free to use/c
 
     diamond/index
 
+.. toctree::
+    :caption: PFAM
+    :titlesonly:
+
+    pfam/index
+
+
+.. toctree::
+    :caption: TIGRFAM
+    :titlesonly:
+
+    tigrfam/index
+
 
 .. toctree::
    :caption: Utility
