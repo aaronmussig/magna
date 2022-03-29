@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/aaronmussig/magna/compare/v2.2.0...v2.3.0) (2022-03-29)
+
+
+### Features
+
+* **diamond:** Added diamond file handler. ([6dd18a5](https://github.com/aaronmussig/magna/commit/6dd18a59ff95df6de5210e4d5150734f76ad194b))
+
 # [2.2.0](https://github.com/aaronmussig/magna/compare/v2.1.1...v2.2.0) (2022-03-17)
 
 

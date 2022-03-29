@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GUNC &mdash; magna 2.2.0 documentation</title>
+  <title>GUNC &mdash; magna 2.3.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> magna
           </a>
               <div class="version">
-                2.2.0
+                2.3.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -45,6 +45,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../gtdb/tree.html">Tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gtdb/metadata.html">Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gtdb/genome.html">Genome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gtdb/markers.html">Markers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gtdb/enums.html">Enums</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">GUNC</span></p>
@@ -54,6 +55,14 @@
 <p class="caption" role="heading"><span class="caption-text">DIAMOND</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../diamond/index.html">DIAMOND</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PFAM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pfam/index.html">PFAM</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">TIGRFAM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tigrfam/index.html">TIGRFAM</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Utility</span></p>
 <ul>
@@ -152,6 +161,23 @@
 <dd><p>The dataframe.</p>
 </dd></dl>
 
+</dd></dl>
+
+</section>
+<section id="helper-functions">
+<h2>Helper functions<a class="headerlink" href="#helper-functions" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="magna.gunc.read_contig_assignments_tsv">
+<span class="sig-prename descclassname"><span class="pre">magna.gunc.</span></span><span class="sig-name descname"><span class="pre">read_contig_assignments_tsv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.gunc.read_contig_assignments_tsv" title="Permalink to this definition"></a></dt>
+<dd><p>Read from the GUNC contig_assignments output file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The path to the DIAMOND output file.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></p>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
