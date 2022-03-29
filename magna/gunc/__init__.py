@@ -8,6 +8,21 @@ from magna.config import MAGNA_DIR
 from magna.util.io import download_file
 
 
+def read_contig_assignments_tsv(path: str) -> pd.DataFrame:
+    """Read from the GUNC contig_assignments output file.
+
+    Args:
+        path: The path to the DIAMOND output file.
+    """
+    dtype = {
+        'contig': object,
+        'tax_level': object,
+        'assignment': object,
+        'count_of_genes_assigned': np.uintc
+    }
+    return pd.read_csv(path, sep='\t', dtype=dtype)
+
+
 def gunc_max_css_scores_gtdb_r95() -> pd.DataFrame:
     """Return the max clade separation score (CSS) for the R95 GTDB."""
     path = os.path.join(MAGNA_DIR, 'gunc', 'gtdb_95.maxcss_level.feather')
@@ -18,7 +33,7 @@ def gunc_max_css_scores_gtdb_r95() -> pd.DataFrame:
 
 def gunc_contig_assignment_gtdb_r95() -> pd.DataFrame:
     """Return the contig assignment for the R95 GTDB."""
-    path = os.path.join(MAGNA_DIR,'gunc', 'GUNC.gtdb_95.contig_assignments.feather')
+    path = os.path.join(MAGNA_DIR, 'gunc', 'GUNC.gtdb_95.contig_assignments.feather')
     if not os.path.isfile(path):
         raise IOError(f'{path} does not exist.')
     return pd.read_feather(path)

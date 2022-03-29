@@ -22,3 +22,9 @@ Progenes reference DB
 
 .. autoclass:: magna.gunc.GuncAllScores
     :members:
+
+Helper functions
+----------------
+
+.. autofunction:: magna.gunc.read_contig_assignments_tsv
+
