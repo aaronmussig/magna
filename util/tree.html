@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PFAM &mdash; magna 2.4.1 documentation</title>
+  <title>Tree &mdash; magna 2.4.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="TIGRFAM" href="../tigrfam/index.html" />
-    <link rel="prev" title="DIAMOND" href="../diamond/index.html" /> 
+    <link rel="next" title="Changelog" href="../changelog.html" />
+    <link rel="prev" title="Accession" href="accession.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -57,18 +57,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../diamond/index.html">DIAMOND</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">PFAM</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">PFAM</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pfam/index.html">PFAM</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">TIGRFAM</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tigrfam/index.html">TIGRFAM</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Utility</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../util/io.html">Input/Output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../util/accession.html">Accession</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../util/tree.html">Tree</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="io.html">Input/Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accession.html">Accession</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tree</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
@@ -89,9 +89,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>PFAM</li>
+      <li>Tree</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/aaronmussig/magna/blob/main/docs/source/pfam/index.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/aaronmussig/magna/blob/main/docs/source/util/tree.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -99,47 +99,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="pfam">
-<h1>PFAM<a class="headerlink" href="#pfam" title="Permalink to this headline"></a></h1>
-<section id="helper-functions">
-<h2>Helper functions<a class="headerlink" href="#helper-functions" title="Permalink to this headline"></a></h2>
+  <section id="tree">
+<h1>Tree<a class="headerlink" href="#tree" title="Permalink to this headline"></a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="magna.pfam.read_pfam">
-<span class="sig-prename descclassname"><span class="pre">magna.pfam.</span></span><span class="sig-name descname"><span class="pre">read_pfam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.pfam.read_pfam" title="Permalink to this definition"></a></dt>
-<dd><p>Read the PFAM file.</p>
+<dt class="sig sig-object py" id="magna.util.tree.dm_to_newick">
+<span class="sig-prename descclassname"><span class="pre">magna.util.tree.</span></span><span class="sig-name descname"><span class="pre">dm_to_newick</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.util.tree.dm_to_newick" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a pairwise distance matrix into Newick format.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>path</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The path to the PFAM file.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arr</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code>) – The symmetrical pairwise distance matrix.</p></li>
+<li><p><strong>labels</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">Collection</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – The labels of the leaf nodes.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></p>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="magna.pfam.read_pfam_tophit">
-<span class="sig-prename descclassname"><span class="pre">magna.pfam.</span></span><span class="sig-name descname"><span class="pre">read_pfam_tophit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.pfam.read_pfam_tophit" title="Permalink to this definition"></a></dt>
-<dd><p>Read the PFAM tophit file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>path</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The path to the PFAM tophit file.</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></p>
-</dd>
-</dl>
-</dd></dl>
-
-</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../diamond/index.html" class="btn btn-neutral float-left" title="DIAMOND" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../tigrfam/index.html" class="btn btn-neutral float-right" title="TIGRFAM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="accession.html" class="btn btn-neutral float-left" title="Accession" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
