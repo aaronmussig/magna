@@ -26,6 +26,6 @@ def dm_to_newick(arr: np.ndarray, labels: Collection[str]) -> str:
         labels: The labels of the leaf nodes.
     """
     Z = hierarchy.linkage(arr)
-    tree = hierarchy.to_tree(Z)
+    tree = hierarchy.to_tree(Z, rd=False)
     newick = _get_newick(tree, tree.dist, labels)
     return newick
