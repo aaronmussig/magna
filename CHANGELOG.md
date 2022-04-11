@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/aaronmussig/magna/compare/v2.4.0...v2.4.1) (2022-03-29)
+
+
+### Bug Fixes
+
+* **gunc:** Fixed path to feather for concatenated assignment file. ([5f48c1b](https://github.com/aaronmussig/magna/commit/5f48c1b18ebe7a452307a2d1bdcce5afc035a920))
+
 # [2.4.0](https://github.com/aaronmussig/magna/compare/v2.3.0...v2.4.0) (2022-03-29)
 
 
