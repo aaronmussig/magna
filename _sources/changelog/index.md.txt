@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/aaronmussig/magna/compare/v2.4.1...v2.5.0) (2022-04-11)
+
+
+### Features
+
+* **tree:** Add distance matrix to newick conversion method. ([9146bbb](https://github.com/aaronmussig/magna/commit/9146bbbcb13151b1860d19c2a17591a07da070ef))
+
 ## [2.4.1](https://github.com/aaronmussig/magna/compare/v2.4.0...v2.4.1) (2022-03-29)
 
 
