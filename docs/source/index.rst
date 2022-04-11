@@ -51,6 +51,7 @@ This has been written with the intention of personal use, but feel free to use/c
 
    util/io
    util/accession
+   util/tree
 
 
 .. toctree::

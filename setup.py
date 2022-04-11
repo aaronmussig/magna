@@ -44,6 +44,6 @@ setup(name=meta['title'],
       packages=find_packages(),
       include_package_data=True,
       install_requires=['tqdm', 'pandas>=1.1.0', 'pyarrow', 'numpy',
-                        'dendropy', 'biopython'],
+                        'dendropy', 'biopython', 'scipy'],
       python_requires='>=3.6',
       )
