@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/aaronmussig/magna/compare/v2.5.0...v2.5.1) (2022-04-11)
+
+
+### Bug Fixes
+
+* **tree:** Force rd=False. ([67087e6](https://github.com/aaronmussig/magna/commit/67087e60cb1f030364c2aea328671b802ad813ca))
+
 # [2.5.0](https://github.com/aaronmussig/magna/compare/v2.4.1...v2.5.0) (2022-04-11)
 
 
