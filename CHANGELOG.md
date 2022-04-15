@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/aaronmussig/magna/compare/v2.5.1...v2.6.0) (2022-04-15)
+
+
+### Features
+
+* **util.pandas:** Add optimise_df to reduce dataframe size. ([706baff](https://github.com/aaronmussig/magna/commit/706bafff248f6a6ad708cee546f9bbffa61897ed))
+
 ## [2.5.1](https://github.com/aaronmussig/magna/compare/v2.5.0...v2.5.1) (2022-04-11)
 
 
