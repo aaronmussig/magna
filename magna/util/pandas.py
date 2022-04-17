@@ -11,8 +11,13 @@ def optimise_df(df: pd.DataFrame, integers: bool = True, floats: bool = True):
         floats: Whether to optimise the floats.
     """
     if floats:
+        float_types = [np.float16, np.float32]
         float_cols = df.select_dtypes('float').columns
-        df[float_cols] = df[float_cols].apply(pd.to_numeric, downcast='float')
+        for float_col in float_cols:
+            for float_type in float_types:
+                if np.min(df[float_col] - df[float_col].astype(float_type)) == 0:
+                    df[float_col] = df[float_col].astype(float_type)
+                    break
 
     if integers:
         sint_types = [np.int8, np.int16, np.int32, np.int64]
