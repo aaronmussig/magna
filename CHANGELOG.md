@@ -1,3 +1,10 @@
+## [2.6.2](https://github.com/aaronmussig/magna/compare/v2.6.1...v2.6.2) (2022-04-17)
+
+
+### Bug Fixes
+
+* **util.pandas.optimise_df:** Stricter processing for float data types. ([3f4aadb](https://github.com/aaronmussig/magna/commit/3f4aadb0223db133471b916179afb26af3f91837))
+
 ## [2.6.1](https://github.com/aaronmussig/magna/compare/v2.6.0...v2.6.1) (2022-04-17)
 
 
