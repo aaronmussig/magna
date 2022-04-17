@@ -1,3 +1,10 @@
+## [2.6.1](https://github.com/aaronmussig/magna/compare/v2.6.0...v2.6.1) (2022-04-17)
+
+
+### Bug Fixes
+
+* **util.pandas.optimise_df:** Stricter processing for unsigned data types. ([64063ff](https://github.com/aaronmussig/magna/commit/64063ff41b1a20163501d144e3ab6cbe87b295e3))
+
 # [2.6.0](https://github.com/aaronmussig/magna/compare/v2.5.1...v2.6.0) (2022-04-15)
 
 
