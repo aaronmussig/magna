@@ -40,5 +40,3 @@ def optimise_df(df: pd.DataFrame, integers: bool = True, floats: bool = True):
                 if col_min >= info.min and col_max <= info.max:
                     df[int_col] = df[int_col].astype(info.dtype)
                     break
-            else:
-                raise ValueError(f'Could not determine data type for column {int_col}')
