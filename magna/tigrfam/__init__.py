@@ -49,9 +49,9 @@ def read_tigrfam_tophit(path: str) -> pd.DataFrame:
     """
     dtype = {
         'seq_id': object,
-        'pfam_acc': object,
+        'marker': object,
         'e_value': np.float64,
-        'bit_score': np.uintc,
+        'bit_score': np.float64,
     }
     lines = list()
     with open(path, 'r') as f:
