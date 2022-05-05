@@ -1,3 +1,15 @@
+# [2.7.0](https://github.com/aaronmussig/magna/compare/v2.6.2...v2.7.0) (2022-05-04)
+
+
+### Bug Fixes
+
+* **util.pandas.optimise_df:** Remove error if integer data type cannot be matched. ([34daffd](https://github.com/aaronmussig/magna/commit/34daffd62321f182ed47f6916f7aee0123094e69))
+
+
+### Features
+
+* **PFAM/TIGRFAM:** Include a set containing markers at specific releases. ([62387d7](https://github.com/aaronmussig/magna/commit/62387d7f91919f199e79fada2a333572773df5a9))
+
 ## [2.6.2](https://github.com/aaronmussig/magna/compare/v2.6.1...v2.6.2) (2022-04-17)
 
 
