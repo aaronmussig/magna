@@ -1,3 +1,10 @@
+## [2.7.1](https://github.com/aaronmussig/magna/compare/v2.7.0...v2.7.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* **PFAM/TIGRFAM:** Adjust columns in tophit file, fix data type. ([c63fc52](https://github.com/aaronmussig/magna/commit/c63fc52b08a37dc3a9618a8d7254e4c292dada4a))
+
 # [2.7.0](https://github.com/aaronmussig/magna/compare/v2.6.2...v2.7.0) (2022-05-04)
 
 
