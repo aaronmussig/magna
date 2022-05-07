@@ -2,6 +2,14 @@
 PFAM
 ****
 
+
+TopHit file
+-----------
+
+.. autoclass:: magna.pfam.TopHitPfamFile
+    :members:
+
+
 Helper functions
 ----------------
 

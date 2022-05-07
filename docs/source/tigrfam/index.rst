@@ -2,6 +2,12 @@
 TIGRFAM
 *******
 
+TopHit file
+-----------
+
+.. autoclass:: magna.tigrfam.TopHitTigrFile
+    :members:
+
 
 Helper functions
 ----------------
