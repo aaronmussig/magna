@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>magna &mdash; magna 2.5.1 documentation</title>
+  <title>magna &mdash; magna 2.8.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,7 +18,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tree" href="gtdb/tree.html" /> 
+    <link rel="next" title="CLI" href="cli/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -29,7 +29,7 @@
             <a href="#" class="icon icon-home"> magna
           </a>
               <div class="version">
-                2.5.1
+                2.8.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -39,7 +39,11 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">GTDB</span></p>
+              <p class="caption" role="heading"><span class="caption-text">CLI</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cli/index.html">CLI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">GTDB</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="gtdb/tree.html">Tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gtdb/metadata.html">Metadata</a></li>
@@ -63,9 +67,19 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="tigrfam/index.html">TIGRFAM</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">NCBI</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ncbi/accession.html">Accession</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ncbi/web.html">Web</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HMMER</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hmmer/index.html">HMMER</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Utility</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="util/io.html">Input/Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util/disk.html">Input/Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util/web.html">Web</a></li>
 <li class="toctree-l1"><a class="reference internal" href="util/accession.html">Accession</a></li>
 <li class="toctree-l1"><a class="reference internal" href="util/tree.html">Tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="util/pandas.html">Pandas</a></li>
@@ -104,6 +118,12 @@
 <img alt="PyPI version" src="https://img.shields.io/pypi/v/magna.svg" /><p>Magna is a collection of bioinformatic datasets and utilities I use in my everyday life.</p>
 <p>This has been written with the intention of personal use, but feel free to use/contribute.</p>
 <div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">CLI</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cli/index.html">CLI</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">GTDB</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="gtdb/tree.html">Tree</a></li>
@@ -138,9 +158,23 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">NCBI</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ncbi/accession.html">Accession</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ncbi/web.html">Web</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">HMMER</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hmmer/index.html">HMMER</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Utility</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="util/io.html">Input/Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util/disk.html">Input/Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util/web.html">Web</a></li>
 <li class="toctree-l1"><a class="reference internal" href="util/accession.html">Accession</a></li>
 <li class="toctree-l1"><a class="reference internal" href="util/tree.html">Tree</a></li>
 <li class="toctree-l1"><a class="reference internal" href="util/pandas.html">Pandas</a></li>
@@ -150,19 +184,21 @@
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html">2.5.1 (2022-04-11)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id2">2.5.0 (2022-04-11)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id5">2.4.0 (2022-03-29)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id7">2.3.0 (2022-03-29)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id9">2.2.0 (2022-03-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id13">2.1.0 (2022-03-11)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id15">2.0.0 (2022-03-10)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id18">1.4.0 (2022-02-18)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id20">1.3.0 (2022-02-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id22">1.2.0 (2022-02-16)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id24">1.1.0 (2022-02-16)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id31">1.0.0 (2022-02-02)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id33">1.0.0 (2021-11-08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html">2.8.0 (2022-05-07)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id3">2.7.0 (2022-05-04)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id10">2.6.0 (2022-04-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id14">2.5.0 (2022-04-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id18">2.4.0 (2022-03-29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id20">2.3.0 (2022-03-29)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id22">2.2.0 (2022-03-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id26">2.1.0 (2022-03-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id28">2.0.0 (2022-03-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id31">1.4.0 (2022-02-18)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id33">1.3.0 (2022-02-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id35">1.2.0 (2022-02-16)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id37">1.1.0 (2022-02-16)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id44">1.0.0 (2022-02-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog/index.html#id46">1.0.0 (2021-11-08)</a></li>
 </ul>
 </li>
 </ul>
@@ -173,7 +209,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="gtdb/tree.html" class="btn btn-neutral float-right" title="Tree" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cli/index.html" class="btn btn-neutral float-right" title="CLI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,3 +1,50 @@
+# [2.8.0](https://github.com/aaronmussig/magna/compare/v2.7.1...v2.8.0) (2022-05-07)
+
+
+### Features
+
+* **PFAM/TIGRFAM:** Add TopHit file. ([eff81d2](https://github.com/aaronmussig/magna/commit/eff81d26f8f4490ac8db11e319444b05d68c973b))
+
+## [2.7.1](https://github.com/aaronmussig/magna/compare/v2.7.0...v2.7.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* **PFAM/TIGRFAM:** Adjust columns in tophit file, fix data type. ([c63fc52](https://github.com/aaronmussig/magna/commit/c63fc52b08a37dc3a9618a8d7254e4c292dada4a))
+
+# [2.7.0](https://github.com/aaronmussig/magna/compare/v2.6.2...v2.7.0) (2022-05-04)
+
+
+### Bug Fixes
+
+* **util.pandas.optimise_df:** Remove error if integer data type cannot be matched. ([34daffd](https://github.com/aaronmussig/magna/commit/34daffd62321f182ed47f6916f7aee0123094e69))
+
+
+### Features
+
+* **PFAM/TIGRFAM:** Include a set containing markers at specific releases. ([62387d7](https://github.com/aaronmussig/magna/commit/62387d7f91919f199e79fada2a333572773df5a9))
+
+## [2.6.2](https://github.com/aaronmussig/magna/compare/v2.6.1...v2.6.2) (2022-04-17)
+
+
+### Bug Fixes
+
+* **util.pandas.optimise_df:** Stricter processing for float data types. ([3f4aadb](https://github.com/aaronmussig/magna/commit/3f4aadb0223db133471b916179afb26af3f91837))
+
+## [2.6.1](https://github.com/aaronmussig/magna/compare/v2.6.0...v2.6.1) (2022-04-17)
+
+
+### Bug Fixes
+
+* **util.pandas.optimise_df:** Stricter processing for unsigned data types. ([64063ff](https://github.com/aaronmussig/magna/commit/64063ff41b1a20163501d144e3ab6cbe87b295e3))
+
+# [2.6.0](https://github.com/aaronmussig/magna/compare/v2.5.1...v2.6.0) (2022-04-15)
+
+
+### Features
+
+* **util.pandas:** Add optimise_df to reduce dataframe size. ([706baff](https://github.com/aaronmussig/magna/commit/706bafff248f6a6ad708cee546f9bbffa61897ed))
+
 ## [2.5.1](https://github.com/aaronmussig/magna/compare/v2.5.0...v2.5.1) (2022-04-11)
 
 
