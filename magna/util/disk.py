@@ -112,3 +112,24 @@ def move_file(src: str, dest: str, checksum: Optional[bool] = False):
     """
     copy_file(src, dest, checksum)
     os.remove(src)
+
+
+def get_file_size_fmt(path: str) -> str:
+    """Format a bytes as a human-readable file unit.
+
+    Args:
+        path: The path to the file.
+
+    Returns:
+        The formatted file size.
+
+    References:
+        https://web.archive.org/web/20111010015624/http://blogmag.net/blog/read/38/Print_human_readable_file_size
+    """
+    num = os.path.getsize(path)
+    suffix = 'B'
+    for unit in ["", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei", "Zi"]:
+        if abs(num) < 1024.0:
+            return f"{num:3.1f}{unit}{suffix}"
+        num /= 1024.0
+    return f"{num:.1f}Yi{suffix}"
