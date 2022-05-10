@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/aaronmussig/magna/compare/v3.0.1...v3.1.0) (2022-05-10)
+
+
+### Features
+
+* **util.web.download_file:** Add silent option for download. ([b2b8fea](https://github.com/aaronmussig/magna/commit/b2b8fea92638f0746fd13d148980fa47e70ab7c4))
+
 ## [3.0.1](https://github.com/aaronmussig/magna/compare/v3.0.0...v3.0.1) (2022-05-10)
 
 
