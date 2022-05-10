@@ -5,7 +5,7 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 
 from magna.gtdb.enums import GtdbRelease
-from magna.util.io import cache_file
+from magna.util.disk import cache_file
 
 
 class Genome:

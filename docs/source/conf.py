@@ -47,7 +47,7 @@ github_url = __url__
 # ones.
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon',
               'sphinx_rtd_theme', 'sphinx_autodoc_typehints',
-              'myst_parser']
+              'myst_parser', 'sphinx_click']
 
 # Napoleon settings
 napoleon_google_docstring = True

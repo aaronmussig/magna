@@ -6,8 +6,8 @@ HMMER
 TopHit file
 -----------
 
-.. autoclass:: magna.hmmer.Hit
+.. autoclass:: magna.hmmer.tophit.Hit
     :members:
 
-.. autoclass:: magna.hmmer.TopHitFile
+.. autoclass:: magna.hmmer.tophit.TopHitFile
     :members:

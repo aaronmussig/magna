@@ -10,6 +10,14 @@ Magna is a collection of bioinformatic datasets and utilities I use in my everyd
 This has been written with the intention of personal use, but feel free to use/contribute.
 
 .. toctree::
+    :caption: CLI
+    :titlesonly:
+
+    cli/index
+
+
+
+.. toctree::
     :caption: GTDB
     :titlesonly:
 
@@ -18,6 +26,7 @@ This has been written with the intention of personal use, but feel free to use/c
     gtdb/genome
     gtdb/markers
     gtdb/enums
+
 
 .. toctree::
     :caption: GUNC
@@ -46,10 +55,26 @@ This has been written with the intention of personal use, but feel free to use/c
 
 
 .. toctree::
+    :caption: NCBI
+    :titlesonly:
+
+    ncbi/accession
+    ncbi/web
+
+
+.. toctree::
+    :caption: HMMER
+    :titlesonly:
+
+    hmmer/index
+
+
+.. toctree::
    :caption: Utility
    :titlesonly:
 
-   util/io
+   util/disk
+   util/web
    util/accession
    util/tree
    util/pandas

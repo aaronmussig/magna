@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 from magna.config import MAGNA_DIR
-from magna.util.io import download_file
+from magna.util.web import download_file
 
 
 def read_contig_assignments_tsv(path: str) -> pd.DataFrame:

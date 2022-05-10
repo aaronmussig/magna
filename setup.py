@@ -31,6 +31,11 @@ setup(name=meta['title'],
           'Documentation': meta['doc_url'],
           'Source Code': meta['src_url'],
       },
+      entry_points={
+          'console_scripts': [
+              'magna = magna.__main__:app'
+          ]
+      },
       classifiers=[
           'Development Status :: 1 - Planning',
           'Intended Audience :: Developers',
@@ -44,6 +49,7 @@ setup(name=meta['title'],
       packages=find_packages(),
       include_package_data=True,
       install_requires=['tqdm', 'pandas>=1.1.0', 'pyarrow', 'numpy',
-                        'dendropy', 'biopython', 'scipy'],
+                        'dendropy', 'biopython', 'scipy', 'typer'],
       python_requires='>=3.6',
+      data_files=[("", ["LICENSE"])]
       )

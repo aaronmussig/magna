@@ -5,7 +5,8 @@ import tempfile
 import dendropy
 
 from magna.config import MAGNA_DIR
-from magna.util.io import download_file, md5sum
+from magna.util.disk import md5sum
+from magna.util.web import download_file
 
 
 class GtdbTree:

@@ -4,7 +4,8 @@ import tempfile
 import pandas as pd
 
 from magna.config import MAGNA_DIR
-from magna.util.io import download_file, md5sum, untar
+from magna.util.disk import md5sum, untar
+from magna.util.web import download_file
 
 
 class GtdbMetadata:

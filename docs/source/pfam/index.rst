@@ -6,7 +6,7 @@ PFAM
 TopHit file
 -----------
 
-.. autoclass:: magna.pfam.TopHitPfamFile
+.. autoclass:: magna.pfam.tophit.TopHitPfamFile
     :members:
 
 

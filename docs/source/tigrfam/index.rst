@@ -5,7 +5,7 @@ TIGRFAM
 TopHit file
 -----------
 
-.. autoclass:: magna.tigrfam.TopHitTigrFile
+.. autoclass:: magna.tigrfam.tophit.TopHitTigrFile
     :members:
 
 
