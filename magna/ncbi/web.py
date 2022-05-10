@@ -88,13 +88,14 @@ class NcbiAssemblyFileType(str, Enum):
     fna = 'fna'
 
 
-def download_ncbi_assembly_file_to_disk(gid: str, target: str, file: NcbiAssemblyFileType):
+def download_ncbi_assembly_file_to_disk(gid: str, target: str, file: NcbiAssemblyFileType, silent: bool = False):
     """Download a file from the NCBI assembly directory to disk.
 
     Args:
         gid: The NCBI accession.
         target: The target path.
         file: The file type to download.
+        silent: True if the progress should be hidden.
 
     Examples:
         >>> download_ncbi_assembly_file_to_disk('GCA_003138775.1', '/tmp/foo.fna.gz', NcbiAssemblyFileType.fna)
@@ -118,7 +119,7 @@ def download_ncbi_assembly_file_to_disk(gid: str, target: str, file: NcbiAssembl
     # Download to a temporary location and verify the md5
     with tempfile.TemporaryDirectory() as tmpdir:
         target_tmp = os.path.join(tmpdir, name)
-        download_file(url, target_tmp, md5)
+        download_file(url, target_tmp, md5, silent=silent)
         move_file(target_tmp, target, checksum=True)
 
 
