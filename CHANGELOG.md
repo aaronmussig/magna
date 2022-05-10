@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/aaronmussig/magna/compare/v2.7.1...v2.8.0) (2022-05-07)
+
+
+### Features
+
+* **PFAM/TIGRFAM:** Add TopHit file. ([eff81d2](https://github.com/aaronmussig/magna/commit/eff81d26f8f4490ac8db11e319444b05d68c973b))
+
 ## [2.7.1](https://github.com/aaronmussig/magna/compare/v2.7.0...v2.7.1) (2022-05-05)
 
 
