@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/aaronmussig/magna/compare/v3.0.0...v3.0.1) (2022-05-10)
+
+
+### Bug Fixes
+
+* **ncbi.web.get_ncbi_assembly_id:** Ensure that the correct ID is returned. ([a2d88f5](https://github.com/aaronmussig/magna/commit/a2d88f55be49d26f1657d0b89808ecbdb9a9b5a2))
+
 # [3.0.0](https://github.com/aaronmussig/magna/compare/v2.8.0...v3.0.0) (2022-05-10)
 
 

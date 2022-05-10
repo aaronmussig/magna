@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web &mdash; magna 3.0.0 documentation</title>
+  <title>Web &mdash; magna 3.0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="../index.html" class="icon icon-home"> magna
           </a>
               <div class="version">
-                3.0.0
+                3.0.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -184,7 +184,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="magna.ncbi.web.download_ncbi_assembly_file_to_disk">
-<span class="sig-prename descclassname"><span class="pre">magna.ncbi.web.</span></span><span class="sig-name descname"><span class="pre">download_ncbi_assembly_file_to_disk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.ncbi.web.download_ncbi_assembly_file_to_disk" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">magna.ncbi.web.</span></span><span class="sig-name descname"><span class="pre">download_ncbi_assembly_file_to_disk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">silent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.ncbi.web.download_ncbi_assembly_file_to_disk" title="Permalink to this definition"></a></dt>
 <dd><p>Download a file from the NCBI assembly directory to disk.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -192,6 +192,7 @@
 <li><p><strong>gid</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The NCBI accession.</p></li>
 <li><p><strong>target</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – The target path.</p></li>
 <li><p><strong>file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">NcbiAssemblyFileType</span></code>) – The file type to download.</p></li>
+<li><p><strong>silent</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – True if the progress should be hidden.</p></li>
 </ul>
 </dd>
 </dl>
