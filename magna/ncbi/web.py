@@ -11,8 +11,6 @@ from magna.ncbi.accession import is_valid_ncbi_gid
 from magna.util.disk import move_file
 from magna.util.web import download_file
 
-RE_NCBI_ASSEMBLY = re.compile(r'<a href="(GC[AF]_\d{9}\.\d.+?)\/">')
-
 
 def get_ncbi_assembly_id(gid: str) -> str:
     """Return the assembly ID for a given NCBI accession.
@@ -34,11 +32,13 @@ def get_ncbi_assembly_id(gid: str) -> str:
 
     urlpath = urllib.request.urlopen(url)
     string = urlpath.read().decode('utf-8')
-    hits = RE_NCBI_ASSEMBLY.findall(string)
+    hits = re.findall(f'<a href="({gid}.+)/">', string)
     if len(hits) == 0:
         raise Exception(f'No hits found: {url}')
     if len(hits) > 1:
         raise NotImplemented(f'Found multiple hits: {hits}')
+    if not hits[0].startswith(gid):
+        raise Exception(f'No gid found: {url}')
     return hits[0]
 
 
@@ -120,3 +120,6 @@ def download_ncbi_assembly_file_to_disk(gid: str, target: str, file: NcbiAssembl
         target_tmp = os.path.join(tmpdir, name)
         download_file(url, target_tmp, md5)
         move_file(target_tmp, target, checksum=True)
+
+
+download_ncbi_assembly_file_to_disk('GCA_000006155.2', '/tmp/fo2o.fna.gz', NcbiAssemblyFileType.fna)
