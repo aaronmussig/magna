@@ -121,6 +121,3 @@ def download_ncbi_assembly_file_to_disk(gid: str, target: str, file: NcbiAssembl
         target_tmp = os.path.join(tmpdir, name)
         download_file(url, target_tmp, md5, silent=silent)
         move_file(target_tmp, target, checksum=True)
-
-
-download_ncbi_assembly_file_to_disk('GCA_000006155.2', '/tmp/fo2o.fna.gz', NcbiAssemblyFileType.fna)
