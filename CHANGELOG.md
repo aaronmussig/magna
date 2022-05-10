@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/aaronmussig/magna/compare/v2.8.0...v3.0.0) (2022-05-10)
+
+
+### Features
+
+* **3.0.0:** Docs / Refactor / NCBI / CLI ([71df0e5](https://github.com/aaronmussig/magna/commit/71df0e5245a3956763a28ea832971c136a90f264))
+
+
+### BREAKING CHANGES
+
+* **3.0.0:** Refactored util.io -> util.web
+
 # [2.8.0](https://github.com/aaronmussig/magna/compare/v2.7.1...v2.8.0) (2022-05-07)
 
 
