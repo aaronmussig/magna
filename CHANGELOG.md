@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/aaronmussig/magna/compare/v3.1.0...v3.1.1) (2022-05-10)
+
+
+### Bug Fixes
+
+* **util.web.download_file:** Remove line used for testing. ([61ee7af](https://github.com/aaronmussig/magna/commit/61ee7afd6165b3cd1467b8822d7f2934292abecd))
+
 # [3.1.0](https://github.com/aaronmussig/magna/compare/v3.0.1...v3.1.0) (2022-05-10)
 
 
