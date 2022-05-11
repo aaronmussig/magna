@@ -7,8 +7,6 @@ on:
 jobs:
   semantic_release:
     runs-on: ubuntu-latest
-    outputs:
-      new_sha: ${{ steps.sha.outputs.SHA }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -26,19 +24,10 @@ jobs:
           echo $sha_new
           echo "::set-output name=SHA::$sha_new"
 
-  documentation:
-    runs-on: ubuntu-latest
-    needs: ['semantic_release']
-    steps:
+    # Build documentation
       - uses: actions/setup-python@v2
         with:
           python-version: '3.8'
-
-      # Checkout the main branch to /main
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.semantic_release.outputs.new_sha }}
-          fetch-depth: 0
 
       # Checkout the GitHub pages branch to /gh-pages
       - uses: actions/checkout@v2
