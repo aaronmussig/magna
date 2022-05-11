@@ -3,5 +3,5 @@ Collection
 **********
 
 
-.. autofunction:: magna.util.collection.get_file_size_fmt
+.. autofunction:: magna.util.collection.get_batches
 
