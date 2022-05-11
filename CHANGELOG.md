@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/aaronmussig/magna/compare/v3.2.0...v3.3.0) (2022-05-11)
+
+
+### Features
+
+* **util.collection.get_batches:** Generator to create batches of a sized collection. ([8f19427](https://github.com/aaronmussig/magna/commit/8f194277670499747087027327f3b1b999ceed45))
+
 # [3.2.0](https://github.com/aaronmussig/magna/compare/v3.1.1...v3.2.0) (2022-05-10)
 
 
