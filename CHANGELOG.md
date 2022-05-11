@@ -1,3 +1,10 @@
+# [3.2.0](https://github.com/aaronmussig/magna/compare/v3.1.1...v3.2.0) (2022-05-10)
+
+
+### Features
+
+* **util.disk.get_file_size_fmt:** Add human-readable formatter for file size. ([d421cae](https://github.com/aaronmussig/magna/commit/d421cae666e89854c1826fc25be175473356ec23))
+
 ## [3.1.1](https://github.com/aaronmussig/magna/compare/v3.1.0...v3.1.1) (2022-05-10)
 
 
