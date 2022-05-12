@@ -1,3 +1,10 @@
+## [3.4.1](https://github.com/aaronmussig/magna/compare/v3.4.0...v3.4.1) (2022-05-12)
+
+
+### Bug Fixes
+
+* **rq:** Update typer config. ([1c62416](https://github.com/aaronmussig/magna/commit/1c624166a75a27fd92a8cee8537d3a02ccd895ca))
+
 # [3.4.0](https://github.com/aaronmussig/magna/compare/v3.3.0...v3.4.0) (2022-05-12)
 
 
