@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/aaronmussig/magna/compare/v3.3.0...v3.4.0) (2022-05-12)
+
+
+### Features
+
+* **rq:** Add generalised commands for redis-queue. ([aee6e67](https://github.com/aaronmussig/magna/commit/aee6e67925f735c99e256ca3bc5b01a8b9ea03e3))
+
 # [3.3.0](https://github.com/aaronmussig/magna/compare/v3.2.0...v3.3.0) (2022-05-11)
 
 
