@@ -15,7 +15,11 @@ This has been written with the intention of personal use, but feel free to use/c
 
     cli/index
 
+.. toctree::
+    :caption: RQ
+    :titlesonly:
 
+    rq/index
 
 .. toctree::
     :caption: GTDB
