@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pandas &mdash; magna 3.3.0 documentation</title>
+  <title>Collection &mdash; magna 3.3.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -17,9 +17,7 @@
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Changelog" href="../changelog.html" />
-    <link rel="prev" title="Tree" href="tree.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -78,12 +76,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../hmmer/index.html">HMMER</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Utility</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="disk.html">Input/Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web.html">Web</a></li>
 <li class="toctree-l1"><a class="reference internal" href="accession.html">Accession</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tree.html">Tree</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pandas.html">Pandas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
@@ -104,9 +102,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Pandas</li>
+      <li>Collection</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/aaronmussig/magna/blob/main/docs/source/util/pandas.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/aaronmussig/magna/blob/main/docs/source/util/collection.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -114,19 +112,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="pandas">
-<h1>Pandas<a class="headerlink" href="#pandas" title="Permalink to this headline"></a></h1>
+  <section id="collection">
+<h1>Collection<a class="headerlink" href="#collection" title="Permalink to this headline"></a></h1>
 <dl class="py function">
-<dt class="sig sig-object py" id="magna.util.pandas.optimise_df">
-<span class="sig-prename descclassname"><span class="pre">magna.util.pandas.</span></span><span class="sig-name descname"><span class="pre">optimise_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">floats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.util.pandas.optimise_df" title="Permalink to this definition"></a></dt>
-<dd><p>Optimise a Pandas DataFrame by using the smallest possible data type.</p>
+<dt class="sig sig-object py" id="magna.util.collection.get_batches">
+<span class="sig-prename descclassname"><span class="pre">magna.util.collection.</span></span><span class="sig-name descname"><span class="pre">get_batches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magna.util.collection.get_batches" title="Permalink to this definition"></a></dt>
+<dd><p>Generate batches of size n from the iterable.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>df</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code>) – The Pandas DataFrame to optimise.</p></li>
-<li><p><strong>integers</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Whether to optimise the integers.</p></li>
-<li><p><strong>floats</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code>) – Whether to optimise the floats.</p></li>
+<li><p><strong>batches.</strong> (<em>The iterable to split into</em>) – </p></li>
+<li><p><strong>batch.</strong> (<em>The size of each</em>) – </p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Iterator</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Sized</span></code>]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>An iterator with each batch.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -136,10 +139,7 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="tree.html" class="btn btn-neutral float-left" title="Tree" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
+          <footer>
 
   <hr/>
 
