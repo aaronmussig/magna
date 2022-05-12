@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; magna 3.3.0 documentation</title>
+  <title>Index &mdash; magna 3.4.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -27,7 +27,7 @@
             <a href="index.html" class="icon icon-home"> magna
           </a>
               <div class="version">
-                3.3.0
+                3.4.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -40,6 +40,10 @@
               <p class="caption" role="heading"><span class="caption-text">CLI</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cli/index.html">CLI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">RQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rq/index.html">RQ</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">GTDB</span></p>
 <ul>
@@ -144,7 +148,11 @@
       <ul>
         <li><a href="cli/index.html#cmdoption-magna-ncbi-download-file">magna-ncbi-download command line option</a>
 </li>
+        <li><a href="cli/index.html#cmdoption-magna-rq-download-file">magna-rq-download command line option</a>
+</li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     --install-completion
 
@@ -152,8 +160,6 @@
         <li><a href="cli/index.html#cmdoption-magna-install-completion">magna command line option</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     --show-completion
 
@@ -301,15 +307,17 @@
       <ul>
         <li><a href="cli/index.html#cmdoption-magna-ncbi-download-arg-GID">magna-ncbi-download command line option</a>
 </li>
+        <li><a href="cli/index.html#cmdoption-magna-rq-download-arg-GID">magna-rq-download command line option</a>
+</li>
       </ul></li>
       <li><a href="gtdb/metadata.html#magna.gtdb.metadata.GtdbMetadata">GtdbMetadata (class in magna.gtdb.metadata)</a>
 </li>
       <li><a href="gtdb/metadata.html#magna.gtdb.metadata.GtdbMetadataR202">GtdbMetadataR202 (class in magna.gtdb.metadata)</a>
 </li>
-      <li><a href="gtdb/metadata.html#magna.gtdb.metadata.GtdbMetadataR202Arc">GtdbMetadataR202Arc (class in magna.gtdb.metadata)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="gtdb/metadata.html#magna.gtdb.metadata.GtdbMetadataR202Arc">GtdbMetadataR202Arc (class in magna.gtdb.metadata)</a>
+</li>
       <li><a href="gtdb/metadata.html#magna.gtdb.metadata.GtdbMetadataR202Bac">GtdbMetadataR202Bac (class in magna.gtdb.metadata)</a>
 </li>
       <li><a href="gtdb/metadata.html#magna.gtdb.metadata.GtdbMetadataR95">GtdbMetadataR95 (class in magna.gtdb.metadata)</a>
@@ -392,6 +400,17 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    magna-rq-download command line option
+
+      <ul>
+        <li><a href="cli/index.html#cmdoption-magna-rq-download-file">--file</a>
+</li>
+        <li><a href="cli/index.html#cmdoption-magna-rq-download-arg-GID">GID</a>
+</li>
+        <li><a href="cli/index.html#cmdoption-magna-rq-download-arg-TARGET">TARGET</a>
+</li>
+      </ul></li>
       <li><a href="gtdb/metadata.html#magna.gtdb.metadata.GtdbMetadata.md5">md5 (magna.gtdb.metadata.GtdbMetadata attribute)</a>
 
       <ul>
@@ -446,12 +465,12 @@
 </li>
       <li><a href="hmmer/index.html#magna.hmmer.tophit.TopHitFile.read">read() (magna.hmmer.tophit.TopHitFile method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="gunc/index.html#magna.gunc.read_contig_assignments_tsv">read_contig_assignments_tsv() (in module magna.gunc)</a>
 </li>
       <li><a href="diamond/index.html#magna.diamond.read_diamond_output">read_diamond_output() (in module magna.diamond)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="pfam/index.html#magna.pfam.read_pfam">read_pfam() (in module magna.pfam)</a>
 </li>
       <li><a href="pfam/index.html#magna.pfam.read_pfam_tophit">read_pfam_tophit() (in module magna.pfam)</a>
@@ -461,6 +480,14 @@
       <li><a href="tigrfam/index.html#magna.tigrfam.read_tigrfam_tophit">read_tigrfam_tophit() (in module magna.tigrfam)</a>
 </li>
       <li><a href="gtdb/genome.html#magna.gtdb.genome.Genome.root">root (magna.gtdb.genome.Genome attribute)</a>
+</li>
+      <li><a href="rq/index.html#magna.rq.rq_delete_queue">rq_delete_queue() (in module magna.rq)</a>
+</li>
+      <li><a href="rq/index.html#magna.rq.rq_enqueue_conda">rq_enqueue_conda() (in module magna.rq)</a>
+</li>
+      <li><a href="rq/index.html#magna.rq.rq_run_conda">rq_run_conda() (in module magna.rq)</a>
+</li>
+      <li><a href="rq/index.html#magna.rq.rq_start_worker">rq_start_worker() (in module magna.rq)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -485,6 +512,8 @@
 
       <ul>
         <li><a href="cli/index.html#cmdoption-magna-ncbi-download-arg-TARGET">magna-ncbi-download command line option</a>
+</li>
+        <li><a href="cli/index.html#cmdoption-magna-rq-download-arg-TARGET">magna-rq-download command line option</a>
 </li>
       </ul></li>
       <li><a href="tigrfam/index.html#magna.tigrfam.TIGRFAM_15">TIGRFAM_15 (in module magna.tigrfam)</a>
