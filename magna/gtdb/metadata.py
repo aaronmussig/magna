@@ -110,4 +110,34 @@ class GtdbMetadataR202:
         #: The combined dataframe.
         self.df: pd.DataFrame = pd.concat([GtdbMetadataR202Arc().df, GtdbMetadataR202Bac().df])
 
+
 # ----------------------------------------------------------------------------------------------------------------------
+
+
+class GtdbMetadataR207Arc(GtdbMetadata):
+    """The archaeal metadata (release 207)."""
+
+    source = 'https://data.gtdb.ecogenomic.org/releases/release207/207.0/ar53_metadata_r207.tar.gz'
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'ar53_metadata_r207.feather')
+    md5 = '610b08c1c1da4e3539a6c88bfa81be5e'
+
+    def __init__(self):
+        super().__init__(self.source, self.path, self.md5)
+
+
+class GtdbMetadataR207Bac(GtdbMetadata):
+    """The bacterial metadata (release 207)."""
+    source = 'https://data.gtdb.ecogenomic.org/releases/release207/207.0/bac120_metadata_r207.tar.gz'
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'bac120_metadata_r207.feather')
+    md5 = 'fb1911b5aa12c098fd25387c4296b157'
+
+    def __init__(self):
+        super().__init__(self.source, self.path, self.md5)
+
+
+class GtdbMetadataR207:
+    """The combined archaeal and bacterial metadata (release 207)."""
+
+    def __init__(self):
+        #: The combined dataframe.
+        self.df: pd.DataFrame = pd.concat([GtdbMetadataR207Arc().df, GtdbMetadataR207Bac().df])
