@@ -1,3 +1,12 @@
+# [3.5.0](https://github.com/aaronmussig/magna/compare/v3.4.1...v3.5.0) (2022-07-15)
+
+
+### Features
+
+* **gtdb/metadata:** Added R207 metadata files. ([5c5a075](https://github.com/aaronmussig/magna/commit/5c5a075add4ce37f4f5a33d3d3b612a6d38e09ed))
+* **gtdb/ssu:** Added R207 SSU files. ([051ca48](https://github.com/aaronmussig/magna/commit/051ca486f1591bd10d19d6f5936a7fd6d7d0a459))
+* **gtdb/tree:** Added R207 tree. ([24b2377](https://github.com/aaronmussig/magna/commit/24b2377e6fc4fe208f1f9e47b0a9b4f1fe6654fb))
+
 ## [3.4.1](https://github.com/aaronmussig/magna/compare/v3.4.0...v3.4.1) (2022-05-12)
 
 
