@@ -81,3 +81,23 @@ class GtdbTreeR202Bac(GtdbTree):
 
     def __init__(self):
         super().__init__(self.source, self.path, self.md5)
+
+
+class GtdbTreeR207Arc(GtdbTree):
+    """The GTDB archaeal tree (release 207)."""
+    source = 'https://data.gtdb.ecogenomic.org/releases/release207/207.0/ar53_r207.tree'
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'tree', 'ar53_r207.tree')
+    md5 = 'e6e493882a067e18d1d6fd50be89c047'
+
+    def __init__(self):
+        super().__init__(self.source, self.path, self.md5)
+
+
+class GtdbTreeR207Bac(GtdbTree):
+    """The GTDB bacterial tree (release 207)."""
+    source = 'https://data.gtdb.ecogenomic.org/releases/release207/207.0/bac120_r207.tree'
+    path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'tree', 'bac120_r207.tree')
+    md5 = '12fab8ba201d200aada9c8d61dafda4b'
+
+    def __init__(self):
+        super().__init__(self.source, self.path, self.md5)

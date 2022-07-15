@@ -129,7 +129,7 @@ class GtdbMetadataR207Bac(GtdbMetadata):
     """The bacterial metadata (release 207)."""
     source = 'https://data.gtdb.ecogenomic.org/releases/release207/207.0/bac120_metadata_r207.tar.gz'
     path = os.path.join(MAGNA_DIR, 'dataset', 'gtdb', 'metadata', 'bac120_metadata_r207.feather')
-    md5 = 'fb1911b5aa12c098fd25387c4296b157'
+    md5 = 'f46495420129e04010288321110b15eb'
 
     def __init__(self):
         super().__init__(self.source, self.path, self.md5)
