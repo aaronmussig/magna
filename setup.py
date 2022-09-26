@@ -1,7 +1,28 @@
 import os
 import re
+import sys
 
-from setuptools import setup, find_packages
+# Restrict to Python 3.8+
+if sys.version_info < (3, 8):
+    sys.exit('Only Python 3.8+ is supported')
+
+# Check setuptools is installed
+try:
+    from setuptools import setup, find_packages
+except ImportError:
+    sys.exit('Please install setuptools before installing this package.')
+
+# Check setuptools_rust is installed
+try:
+    from setuptools_rust import Binding, RustExtension
+except ImportError:
+    sys.exit('Please install setuptools-rust before installing this package.')
+
+
+# Read the long description from the README file
+def readme():
+    with open('README.md', encoding='utf-8') as f:
+        return f.read()
 
 
 def read_meta():
@@ -9,11 +30,6 @@ def read_meta():
     with open(path) as fh:
         hits = re.findall(r'__(\w+)__ ?= ?["\'](.+)["\']\n', fh.read())
     return {k: v for k, v in hits}
-
-
-def readme():
-    with open('README.md') as f:
-        return f.read()
 
 
 meta = read_meta()
@@ -37,19 +53,26 @@ setup(name=meta['title'],
           ]
       },
       classifiers=[
-          'Development Status :: 1 - Planning',
-          'Intended Audience :: Developers',
-          'License :: OSI Approved :: GNU Affero General Public License v3',
+          "Development Status :: 4 - Beta",
+          "Intended Audience :: Science/Research",
+          "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
           'Natural Language :: English',
-          'Operating System :: OS Independent',
-          'Programming Language :: Python :: 3.6',
-          'Topic :: Software Development',
-          'Topic :: Scientific/Engineering :: Bio-Informatics',
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Topic :: Scientific/Engineering :: Bio-Informatics",
+          "Topic :: Software Development :: Libraries :: Python Modules",
       ],
       packages=find_packages(),
       include_package_data=True,
       install_requires=['tqdm', 'pandas>=1.1.0', 'pyarrow', 'numpy',
-                        'dendropy', 'biopython', 'scipy', 'typer', 'rq', 'redis'],
-      python_requires='>=3.6',
-      data_files=[("", ["LICENSE"])]
+                        'dendropy', 'biopython', 'scipy', 'typer[all]',
+                        'rq', 'redis'],
+      setup_requires=['setuptools-rust', 'setuptools', 'wheel'],
+      python_requires='>=3.8',
+      rust_extensions=[RustExtension("magna.magna", binding=Binding.PyO3, debug=False)],
+      data_files=[("", ["LICENSE"])],
+      zip_safe=False,
       )

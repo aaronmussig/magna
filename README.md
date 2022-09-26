@@ -4,7 +4,9 @@
 
 Magna is a collection of bioinformatic datasets and utilities I use in my everyday life.
 
-This has been written with the intention of personal use, but feel free to use/contribute.
+This has been written with the intention of personal use, but feel free to use/contribute. 
+
+No guarantees are made that the API will remain stable between so ensure you fix the version.
 
 **Documentation:** [https://aaronmussig.github.io/magna/](https://aaronmussig.github.io/magna/)
 

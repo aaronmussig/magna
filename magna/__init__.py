@@ -8,3 +8,6 @@ __license__ = 'GNU AGPLv3'
 __bug_url__ = 'https://github.com/aaronmussig/magna'
 __doc_url__ = 'https://github.com/aaronmussig/magna'
 __src_url__ = 'https://github.com/aaronmussig/magna'
+
+# Import the rust binary
+from .magna import *

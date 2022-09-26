@@ -1,12 +1,7 @@
 {
   "tagFormat": "v${version}",
   "branches": [
-    "main",
-    {
-      "name": "develop",
-      "channel": "prerelease",
-      "prerelease": "prerelease"
-    }
+    "main"
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -20,7 +15,7 @@
     [
       "@semantic-release/changelog",
       {
-        "changelogFile": "CHANGELOG.md",
+        "changelogFile": "CHANGELOG.md"
       }
     ],
   [

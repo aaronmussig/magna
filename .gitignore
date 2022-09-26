@@ -139,3 +139,8 @@ node_modules/
 
 # Local script for running docs
 docs.sh
+
+
+# Added by cargo
+
+/target

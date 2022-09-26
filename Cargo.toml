@@ -1,0 +1,13 @@
+[package]
+name = "magna"
+version = "3.4.0"
+edition = "2021"
+
+[lib]
+name="magna"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.17.1", features = ["extension-module"] }
+numpy = { version = "0.17.1" }
+ndarray = "0.15.6"
