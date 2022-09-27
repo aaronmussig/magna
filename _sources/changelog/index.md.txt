@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/aaronmussig/magna/compare/v3.5.0...v4.0.0) (2022-09-27)
+
+
+### Features
+
+* **rust:** Added PYO3 rust bindings and updated CI/CD. ([7d28848](https://github.com/aaronmussig/magna/commit/7d2884865472305c32604f371c9c3753e55da201))
+
+
+### BREAKING CHANGES
+
+* **rust:** Rust is required.
+
 # [3.5.0](https://github.com/aaronmussig/magna/compare/v3.4.1...v3.5.0) (2022-07-15)
 
 
