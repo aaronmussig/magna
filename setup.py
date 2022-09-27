@@ -3,8 +3,9 @@ import re
 import sys
 
 # Restrict to Python 3.8+
-if sys.version_info < (3, 8):
-    sys.exit('Only Python 3.8+ is supported')
+# scipy doesn't work on 3.11+
+if sys.version_info < (3, 8) or sys.version_info >= (3, 11):
+    sys.exit('Only Python [3.8, 3.11) is supported')
 
 # Check setuptools is installed
 try:
