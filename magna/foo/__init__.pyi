@@ -1,4 +1,0 @@
-
-
-def func() -> str:
-    """asd"""
