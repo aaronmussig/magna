@@ -2,11 +2,27 @@ import time
 import unittest
 
 from magna.hmmer.tophit import TopHitFile
+from magna.kmer import get_kmer_to_idx, get_kmer_count_fasta
 
 
 class TestBindings(unittest.TestCase):
 
     def test_add_node(self):
+
+        seq = 'ATCGATAGATTAAA'
+
+        x = get_kmer_count_fasta('/tmp/fasta.faa', 2, True)
+
+        for a, b in x.items():
+            print(a)
+            print(b.counts)
+
+        print(x)
+
+
+
+        return
+
         n = 1
 
         c = time.time()
