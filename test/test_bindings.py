@@ -11,7 +11,7 @@ class TestBindings(unittest.TestCase):
 
         seq = 'ATCGATAGATTAAA'
 
-        x = get_kmer_count_fasta('/tmp/fasta.faa', 2, True)
+        x = get_kmer_count_fasta('/private/tmp/GCF_000654035.1_Myco_tube_TKK_04_0105_V1_cds_from_genomic.fna', 2, True)
 
         for a, b in x.items():
             print(a)

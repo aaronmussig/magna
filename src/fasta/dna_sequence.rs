@@ -24,7 +24,15 @@ impl DnaSequence {
         Ok(&self.seq)
     }
 
-    pub fn rev_complement(&self) -> DnaSequence {
+     #[pyo3(name = "rev_complement")]
+    fn py_rev_complement(&self) -> PyResult<DnaSequence> {
+        Ok(self.rev_complement())
+    }
+
+}
+
+impl DnaSequence {
+      pub fn rev_complement(&self) -> DnaSequence {
         let mut out = String::new();
         for c in self.seq.chars().rev() {
             match c {
