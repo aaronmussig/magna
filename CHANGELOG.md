@@ -1,3 +1,17 @@
+# [4.1.0](https://github.com/aaronmussig/magna/compare/v4.0.1...v4.1.0) (2022-10-26)
+
+
+### Features
+
+* **kmer:** Add k-mer counting. ([7b1d556](https://github.com/aaronmussig/magna/commit/7b1d556e3189c17482f9b5f9bf73233659101106))
+* **kmer:** Add k-mer counting. ([b7e7136](https://github.com/aaronmussig/magna/commit/b7e71362ce5248587fd58c8ce76905d5be92c2f8))
+* **magna.gtdb:** Add previous release metadata files. ([14f2c93](https://github.com/aaronmussig/magna/commit/14f2c9386e687afa5718d13b3634ead9369f85c4))
+
+
+### Reverts
+
+* **magna.foo:** Remove test file. ([ee425d7](https://github.com/aaronmussig/magna/commit/ee425d762818afcf3f595ceb959d14a0e9704888))
+
 ## [4.0.1](https://github.com/aaronmussig/magna/compare/v4.0.0...v4.0.1) (2022-09-27)
 
 
