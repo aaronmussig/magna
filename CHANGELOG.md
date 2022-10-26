@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/aaronmussig/magna/compare/v4.0.0...v4.0.1) (2022-09-27)
+
+
+### Bug Fixes
+
+* **ci:** Bump. Fix issue where bumped version is not included. ([013cdb4](https://github.com/aaronmussig/magna/commit/013cdb4d6a89f800b645c1b0f840964d365af5ca))
+
 # [4.0.0](https://github.com/aaronmussig/magna/compare/v3.5.0...v4.0.0) (2022-09-27)
 
 
